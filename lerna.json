@@ -3,6 +3,7 @@
   "npmClient": "yarn",
   "packages": [
     "mfe1",
+    "mfe2",
     "shell"
   ]
 }
