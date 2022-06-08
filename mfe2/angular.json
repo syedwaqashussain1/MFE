@@ -1,0 +1,184 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "mfe2": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "ngx-build-plus:browser",
+          "options": {
+            "allowedCommonJsDependencies": [
+              "rxjs-compat", "ng-block-ui", "primeng/progressbar", "rxjs", "primeng", "socket.io-client", "highcharts", "firebase", "@firebase/database", "@firebase/firestore", "jquery",
+              "crypto-js", "stacktrace-js", "chart.js"
+            ],
+            "outputPath": "dist/mfe2",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/angular-calendar/css/angular-calendar.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "node_modules/angular-archwizard/archwizard.css",
+              "src/assets/css/bootstrap.min.css",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss",
+              "src/assets/css/style.less",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "src/assets/js/jquery-3.2.1.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "node_modules/chart.js/dist/Chart.js"
+            ],
+            "extraWebpackConfig": "webpack.config.js"
+          },
+          "configurations": {
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "buildOptimizer": false
+            },
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ],
+              "extraWebpackConfig": "webpack.prod.config.js"
+            }
+          }
+        },
+        "serve": {
+          "builder": "ngx-build-plus:dev-server",
+          "options": {
+            "browserTarget": "mfe2:build",
+            "extraWebpackConfig": "webpack.config.js",
+            "port": 4202
+          },
+          "configurations": {
+            "development": {
+              "browserTarget": "mfe2:build:development",
+              "extraWebpackConfig": "webpack.prod.config.js"
+            },
+            "production": {
+              "browserTarget": "mfe2:build:production",
+              "extraWebpackConfig": "webpack.prod.config.js"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "mfe2:build"
+          }
+        },
+        "test": {
+          "builder": "ngx-build-plus:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "scripts": [
+              "src/assets/js/jquery-3.2.1.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "node_modules/chart.js/dist/Chart.js"
+            ],
+            "styles": [
+              "node_modules/angular-calendar/css/angular-calendar.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/omega/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/style.less",
+              "src/styles.css"
+            ],
+            "extraWebpackConfig": "webpack.config.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "mfe2:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "mfe2:serve:production"
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "mfe2",
+  "schematics": {
+    "@schematics/angular:component": {
+      "spec": false,
+      "inlineStyle": false,
+      "prefix": "app",
+      "styleext": "css"
+    },
+    "@schematics/angular:directive": {
+      "prefix": "app"
+    }
+  }
+}

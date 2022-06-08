@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --family-work-sans: 'Work Sans', sans-serif;
+    --weight-100: 100;
+    --weight-200: 200;
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-800: 800;
+    --weight-900: 900;
+
+    --white:#fff;
+    --black:#fff;
+    --border-default:#E6E6E6;
+    --text-default: #495584; 
+    --text-dark: #24282F; 
+    --body-bg: #F2F5F9;
+    --app-red:#C40505;
+    --app-blue:#1D499E;
+
+    --theme-red-ribbon: #F82649;
+    --theme-purple: #6259CA;
+    --theme-green: #09AD95;
+    --theme-red: #C40505;
+    --theme-orange: #FB6B25;
+    --theme-yellow: #F8BB3E;
+
+    //header styles
+    --header-bg: #fff;
+    --header-border: #E6E6E6;
+
+    // tabview
+
+    --tab-bg: #E9EBF3;
+    --tab-active-bg: #fff;
+    --tab-border: #495584;
+    --tab-active-border: #fff;
+
+    //card
+
+    --card-bg: #fff;
+    --card-border: #E6E6E6;
+
+    //grid
+    --grid-column-text: #495584;
+    --grid-thead-blue: #1D499E;
+    --grid-thead-color: #fff;
+    --grid-odd-bg: #F2F7FB;
+    --highlighted-row: #9398B4;
+
+    // line chart block
+
+    --line-chart-block-bg:  #F2F5F9;
+
+}
+
+// Convert pixel values to rem, Sass style
+$html-font-size: 16px;
+
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
+@function em($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($html-font-size)}em;
+}
+
+@import 'main.scss';

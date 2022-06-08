@@ -1,0 +1,11 @@
+.pageHead{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    h2{
+        margin: 0;
+        font-weight: var(--weight-500);
+        font-size: 1.428571428571429em;
+        color: var(--text-dark);
+    }
+}

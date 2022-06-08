@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="200.7px" height="56.4px" viewBox="0 0 200.7 56.4" style="enable-background:new 0 0 200.7 56.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#C40505;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+</style>
+<path d="M58.5,56.3V39.1h3v17.2H58.5L58.5,56.3z M73.8,48.8v-2.5h10.8v10H74.2c-1.2,0-2.3-0.2-3.3-0.7c-1-0.5-1.9-1.1-2.7-1.8
+	c-0.7-0.8-1.3-1.7-1.8-2.8c-0.4-1.1-0.6-2.2-0.6-3.5c0-1.3,0.2-2.4,0.6-3.5c0.4-1,1-1.9,1.8-2.7c0.8-0.7,1.6-1.3,2.7-1.7
+	c1-0.4,2.1-0.6,3.3-0.6h9.3v3h-9.3c-0.8,0-1.5,0.1-2.1,0.4c-0.7,0.3-1.2,0.7-1.7,1.1c-0.5,0.5-0.8,1.1-1.1,1.8
+	c-0.3,0.7-0.4,1.4-0.4,2.3c0,0.8,0.1,1.6,0.4,2.3c0.3,0.7,0.6,1.3,1.1,1.8c0.5,0.5,1,0.9,1.7,1.2c0.7,0.3,1.4,0.4,2.1,0.4h7.4v-4.5
+	H73.8L73.8,48.8z M102.9,56.4v-7.5h-8.7v-2.7h8.7v-7.1h3v17.3H102.9L102.9,56.4z M89.1,39.1h3v17.3h-3V39.1L89.1,39.1z M119.1,42.1
+	v14.2h-3V42.1h-6.5v-3h16.1v3H119.1L119.1,42.1z M140.9,42.1v14.2h-3V39.1h14.6v3H140.9L140.9,42.1z M151.9,49.2h-8.7v-2.6h8.7V49.2
+	L151.9,49.2z M172,56.3l-2.6-4.3h-8.2l1.4-2.4h5.3l-3.8-6.4l-7.8,13.2h-3.4l9.9-16.5c0.2-0.3,0.4-0.5,0.6-0.7
+	c0.2-0.2,0.5-0.3,0.9-0.3c0.3,0,0.6,0.1,0.8,0.3c0.2,0.2,0.4,0.4,0.6,0.7l9.9,16.5H172L172,56.3z M200.7,56.3h-4.2l-7.2-7l-7.2,7
+	h-3.9l9.2-9l-8.6-8.3h4.1l6.6,6.4l6.5-6.4h3.9l-8.6,8.3L200.7,56.3L200.7,56.3z"/>
+<polyline class="st0" points="8.8,0.4 32.2,0.4 32.2,23.5 "/>
+<polyline class="st0" points="31.2,56.4 18.2,56.4 18.2,45.2 "/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="28" x2="52" y2="28">
+	<stop  offset="0" style="stop-color:#276BE5"/>
+	<stop  offset="1" style="stop-color:#59AEDB"/>
+</linearGradient>
+<polygon class="st1" points="0,0 39,38.3 39,0 52,0 52,56 39,56 13,31.5 13,56 0,56 0,7.5 "/>
+<polygon class="st0" points="58.7,12.9 58.7,0 99.7,0 88.9,12.9 58.7,12.9 "/>
+<polygon class="st0" points="58.7,19.4 58.7,32.3 72.4,32.3 83.1,19.4 58.7,19.4 "/>
+</svg>

@@ -1,0 +1,22 @@
+.graphBlockHolder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    .graphBlock{
+        flex: 0 0 calc(33.333% - 2px);
+        max-width: calc(33.333% - 2px);
+        margin-bottom: 2rem;
+        .graphBlockHead{
+            background: var(--app-blue);
+            color: var(--white);
+            text-align: center;
+            color: var(--grid-thead-color);
+            font-size: 0.9285714286em;
+            font-weight: var(--weight-500);
+            padding: 0.2rem 0.5rem;
+        }
+        .graphBlockBody{
+            min-height: 500px;
+        }
+    }
+}

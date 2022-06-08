@@ -1,0 +1,63 @@
+.gridGraphViewContent{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    .summaryGrid{
+        flex: 0 0 612px;
+        max-width: 612px;
+    }
+    .lineChartBlockHolder{
+        flex: 0 0 480px;
+        max-width: 480px;
+        display: flex;
+        align-items: center;
+        .lineChartBlock{
+            background: var(--line-chart-block-bg);
+            border-radius: 10px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            h5{
+                margin: 0;
+                color: var(--text-dark);
+                font-weight: var(--weight-500);
+                font-size: 16px;
+            }
+            .lineChartSec{
+                display: flex;
+                gap: 1.5rem;
+            }
+            .lineChart{
+                width: 100%;
+            }
+            .lineChartBadges{
+                flex: 0 0 120px;
+                max-width: 0 0 120px;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                p{
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    span{
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+    .chartBlockHolder{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .chartHolderSp{
+            width: 70%;
+        }
+    }
+}

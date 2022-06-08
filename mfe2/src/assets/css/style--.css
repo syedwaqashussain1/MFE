@@ -1,0 +1,141 @@
+@import "../fonts/fonts.css";
+
+html,body{
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.4;
+    color: #000;
+    padding:0;
+    margin:0;
+}
+h1,h2,h3{
+    font-family: 'Open Sans Bold';
+    font-weight: normal;
+}
+h4.h5,h6{
+    font-family: 'Open Sans Semibold';
+}
+strong{
+    font-family: 'Open Sans Bold';
+    font-weight: normal;
+}
+b{
+    font-family: 'Open Sans Semibold';
+}
+a{
+    text-decoration: none;
+}
+button:focus,input:focus,textarea:focus{
+    outline: none;
+}
+input,textarea,select{
+    border-right:none ;
+    border-top:none ;
+    border-left:none ;
+    border-bottom: 1px solid #6c6c6c;
+    padding: 10px 5px;
+    font-size: 12px;
+    font-family: "Open Sans";
+    color: #000;
+}
+button{
+    height: 27px;
+    min-width: 90px;
+    font-family: "Open Sans Bold";
+    font-size: 11px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #1f2d5c;
+    border-color: #1f2d5c;
+    color: #fff;
+    border-radius: 7px;
+}
+input:focus,textarea:focus,select:focus{
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,select::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #6a6a6a;
+}
+input::-moz-placeholder,textarea::-moz-placeholder,select::-moz-placeholder {
+  color: #6a6a6a;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder,select:-ms-input-placeholder { /* IE 10+ */
+  color: #6a6a6a;
+}
+
+/*dashboard style starts here*/
+
+.dashboardHeaderSec{margin: 0;padding: 0;width: 100%;float: left;background: #292e5a;}
+.logoSec{margin: 0;padding: 8px 10px;float: left;}
+
+.dashboradLeftMenuContent{margin: 0;padding: 0;width: 100%;display: table;}
+.dashboradLeftMenuContent .nav{width: 100%;float:left;}
+.dashboradLeftMenuContent .nav li{width: 100%;margin: 0;}
+.dashboradLeftMenuContent .nav li:first-child a{border-top: 1px solid #3f3f3f;}
+.dashboradLeftMenuContent .nav li a{border: 0;background: none;border-radius: 0;margin: 0;border-bottom: 1px solid #3f3f3f;color: #fff;font-weight: bold;cursor: pointer;}
+.dashboradLeftMenuContent .nav li a:hover,.dashboradLeftMenuContent .nav li.active a{background: #51618b;border-left: 0;color: #fff;cursor: pointer;}
+.dashboradLeftMenuContent .tab-content{display: table-cell;float: none;width: calc(100% - 200px);padding: 15px;}
+.dashboradLeftMenuContent .tab-content .tab-pane{padding: 15px;width: 100%;float: left;display: block}
+
+.mainHeadingSec{width: 100%;float: left;margin-top: 15px;margin-bottom: 15px;}
+.mainHeadingSec h2{width: 100%;float: left;font-size: 32px;color: #6d6d6d;font-weight: normal;font-family: 'Open Sans',sans-serif;margin: 0 0 15px 0;}
+.mainHeadingSec h3{width: 100%;float: left;font-size: 20px;color: #a1a1a1;font-weight: normal;border: 1px solid #e8e8e8;background: #f6f6f6;padding: 5px 10px;font-family: 'Open Sans',sans-serif;line-height: 26px;margin: 0;}
+
+.dashboradNavBoxContent{width: 100%;float: left;margin: 0;padding: 0;}
+.dashboradNavBoxRow{margin-left: -10px;margin-right: -10px;}
+.dashboradNavBoxContent .dashboradNavBoxRow > ul{width: 100%;float: left;margin: 0;padding: 0;font-size: 0;list-style-type: none;}
+.dashboradNavBoxContent .dashboradNavBoxRow > ul > li{list-style-type: none;display: inline-block;margin: 10px}
+.dashboradNavBoxContent .dashboradNavBoxRow > ul > li > a{width: 204px;height: 109px;float: left;line-height: 89px;text-align: center;padding: 10px;color: #fff;font-size: 18px;}
+.dashboradNavBoxContent .dashboradNavBoxRow > ul > li:nth-child(7n+1){background: #ecc926;}
+.dashboradNavBoxContent .dashboradNavBoxRow > ul > li:nth-child(7n+2){background: #01bd99;}
+.dashboradNavBoxContent .dashboradNavBoxRow > ul > li:nth-child(7n+3){background: #019ae0;}
+.dashboradNavBoxContent .dashboradNavBoxRow > ul > li:nth-child(7n+4){background: #c255f0;}
+.dashboradNavBoxContent .dashboradNavBoxRow > ul > li:nth-child(7n+5){background: #ff4b1a;}
+.dashboradNavBoxContent .dashboradNavBoxRow > ul > li:nth-child(7n+6){background: #ec9a26;}
+.dashboradNavBoxContent .dashboradNavBoxRow > ul > li:nth-child(7n+7){background: #bd013f;}
+
+.dashboardGraphContent{margin: 0;padding: 0;width: 100%;float: left;}
+
+.graphSec{margin: 15px 0;padding: 0;width: 100%;float: left;height: 280px;background: #333;}
+.navAttribute{display: table-cell; background: #22325a;}
+.nav-tabs{border-bottom:none;}
+
+
+
+.tabLeftNav{    width: 200px;
+    float: none;
+    background: #22325a;
+    height: calc(100vh - 66px);display: table-cell;vertical-align: top;}
+.dashboradLeftMenuContent{display: table;width: 100%;}
+
+.text-center-sm {
+    text-align: center;
+  }
+
+  .text-left-sm {
+    text-align: left;
+  }
+
+  .text-right-sm {
+    text-align: right;
+  }
+
+.m-b-zero{
+    margin-bottom: 0px !important;
+}
+
+.cl-red{
+    color:red;
+}
+
+.m-b-10{
+    margin-bottom: 10px !important;
+}
+
+.m-b-20{
+    margin-bottom: 20px;
+}
+
+div.grossAndAverageDays .ui-panel-titlebar.ui-widget-header.ui-helper-clearfix.ui-corner-all.ng-tns-c1-1.ng-star-inserted{
+    padding-bottom:26px !important;
+}
